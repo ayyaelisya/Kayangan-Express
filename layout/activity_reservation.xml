@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ECE3E3">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"> <!-- Added padding for better spacing -->
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="249dp"
+            android:layout_height="78dp"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/widelogo" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="73dp"
+            android:layout_gravity="center_horizontal"
+            android:text="Reservation"
+            android:textAllCaps="true"
+            android:textColor="#231E0D"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/eTname"
+            android:layout_width="match_parent"
+            android:layout_height="67dp"
+            android:hint="Name"
+            android:ems="10"
+            android:inputType="text"
+            android:textAlignment="textStart"
+            android:background="@drawable/rounded_corner"
+            android:textColor="#000000"
+            android:textColorHint="#0B0A0A"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/eTPhone"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:hint="Phone Number"
+            android:ems="10"
+            android:inputType="phone"
+            android:background="@drawable/rounded_corner"
+            android:textColor="#020101"
+            android:textColorHint="#000000"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/etDate"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:hint="Date"
+            android:ems="10"
+            android:inputType="date"
+            android:background="@drawable/rounded_corner"
+            android:textColor="#0B0606"
+            android:textColorHint="#070404" />
+
+        <Spinner
+            android:id="@+id/spinnerTime"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="#E3D1A3" />
+
+        <EditText
+            android:id="@+id/etNoperson"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@drawable/rounded_corner"
+            android:ems="10"
+            android:hint="No of Person"
+            android:inputType="number"
+            android:textColor="#100909"
+            android:textColorHint="#0C0B0B"
+            android:textSize="20sp" />
+
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center_horizontal">
+
+            <RadioButton
+                android:id="@+id/radioButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Indoor"
+                android:textColor="#100909" />
+
+            <RadioButton
+                android:id="@+id/radioButton2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Outdoor"
+                android:textColor="#100808" />
+        </RadioGroup>
+
+        <EditText
+            android:id="@+id/etSpecialRequests"
+            android:layout_width="377dp"
+            android:layout_height="177dp"
+            android:background="@drawable/rounded_corner"
+            android:hint="Special Requests"
+            android:inputType="textMultiLine"
+            android:lines="3"
+            android:maxLines="5"
+            android:textColor="#101010"
+            android:textColorHint="#808080"
+            android:textSize="20sp" />
+
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="385dp"
+            android:layout_height="45dp"
+            android:text="*You can make order at here." />
+
+        <Button
+            android:id="@+id/btnSubmit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="#231E0D"
+            android:text="Submit" /> <!-- Adjust margin as needed -->
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,72 @@
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".ProfileActivity">
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <!-- Adjusted typography and spacing -->
+            <TextView
+                android:id="@+id/textViewName1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Name"
+                android:textColor="@color/black"
+                android:textSize="24sp"
+                android:layout_marginTop="24dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="24dp">
+
+                <!-- Adjusted button styles -->
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/editProfile"
+                    style="@style/ProfileButtonStyle"
+                    android:text="Edit Profile" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/button2"
+                    style="@style/ProfileButtonStyle"
+                    android:text="Order" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/termsandpolicy"
+                    style="@style/ProfileButtonStyle"
+                    android:text="Terms and Policy" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/UserManual"
+                    style="@style/ProfileButtonStyle"
+                    android:text="@string/user_manual" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btnLogout"
+                    style="@style/ProfileButtonStyle"
+                    android:drawableStart="@drawable/baseline_arrow_back_ios_24"
+                    android:text="Logout" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
