@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.kayanganexpress">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:exported="false"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.KayanganExpress"
+        tools:targetApi="31">
+        <activity
+            android:name=".UserManualActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SideDishActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DrinkActivity"
+            android:exported="false" />
+        <activity
+            android:name=".GrillActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ViewOrderActivity"
+            android:exported="false" />
+        <activity
+            android:name=".EditProfileActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".AddStaffActivity"
+            android:exported="false" />
+        <activity
+            android:name=".StaffManagementActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PastaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".TermsPolicyActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ProfileInfoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ReservationManagementActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AdminActivity2"
+            android:exported="false" />
+        <activity
+            android:name=".CategoryMenuActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".HomepageAdminActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".RegistrationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ReservationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".HomePageActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LoginActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
